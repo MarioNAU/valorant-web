@@ -1,0 +1,372 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./assets/ValorantFont.ttf);
+  }
+
+.Valorant-font{
+    font-family: myFirstFont;
+    color: blue;
+}
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.main{
+  z-index: -1;
+  width:100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+video{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.content{
+  z-index: 10;
+  position: absolute;
+  left: 3%;
+}
+
+body{
+  background-color: black;
+  overflow: hidden;
+}
+
+.rombo{
+  margin: 0px;
+  padding: 0px;
+  font-size: 5em;
+}
+
+.option{ 
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  list-style: none;
+  margin: 10px;
+  color:white;
+  text-align: left;
+  cursor: pointer;
+}
+  .option::before{
+  content: '';
+  display: inline-block;
+  height: 0.2em;
+  width: 0.2em;
+  margin-top: 38px;
+  padding-left: 25px;
+  background-image: url(./assets/rombo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+.option:first-child{
+  color: #ef2f56;
+  font-size: 8rem;
+  margin-top: 100px;
+}
+.option:first-child::before{
+  color: #ef2f56;
+  font-size: 8rem;
+  margin-top: 60px;
+}
+
+
+.rombo:hover li{
+  color: white;
+  font-size: 5rem;
+}
+
+.rombo .option:hover{
+  color: #46d0b3;
+  font-size: 8rem;
+}
+.option:hover::before{
+  margin-top: 60px;
+  color:#ef2f56;
+  font-size: 8rem;
+}
+
+.option:first-child:hover{
+  color:#ef2f56;
+}
+
+
+.play-main{
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/lobby.jpg_large);
+  background-size: cover;
+  
+}
+
+.bar-nav{
+  padding-top: 0%;
+  padding-right: 25px;
+  margin-left: 28.5%;
+  z-index: 1;
+  background: rgba(50, 53, 60, 40%);/*50 53 60 40*/
+}
+
+.bar-nav::before{
+  z-index: 0;
+  left:25%;
+  margin: 0%;
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  clip-path: polygon(8% 18%, 91% 18%, 100% 0, 0 0);
+  background: rgba(7, 18, 35, 40%);/*50 53 60 40*/
+  opacity: 100%;
+}
+
+.big-red{
+  background-color: #ef2f56;
+  width: 35vh;
+  height: 5.5vh;
+  font-size: 2.7em;
+  clip-path: polygon(8% 100%, 91% 100%, 100% 0, 0 0);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 5px;
+  color:white;
+}
+
+.icons{
+  width: 45%;
+  height: auto;
+  padding-top: 0px;
+  margin-top: 10px;
+  filter: invert(0%) sepia(50%) saturate(0%) hue-rotate(233deg) brightness(100%) contrast(60%);
+}
+
+.icons:hover{
+  filter: invert(48%) sepia(20%) saturate(3907%) hue-rotate(160deg) brightness(390%) contrast(190%);
+
+  /*filter: hsla(147, 100%, 89%, 1);*/
+}
+
+.item-nav{
+  float: inline-start;
+  margin-right: 0%;
+  margin-left: 1%;
+  height:auto;
+}
+
+
+.tooltip {
+  position: relative;
+  float: left;
+}
+
+ .tooltiptext {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-size: 1.2rem;
+  z-index: 1000;
+  visibility: hidden;
+  width: fit-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  /* Position the tooltip */
+  position: absolute;
+  top: 5.5vh;
+  left: 12%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.modes-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 65%;
+  height: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border-bottom: solid rgba(206, 203, 203, 0.5)  1px;
+  
+}
+
+.mode{
+  width: 100%;
+  color:hsl(201, 29%, 71%);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2%;
+  margin-right: 2%;
+  color:#cecbcb;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+.mark .mode:visited{
+  color:#46d0b3;
+}
+
+.mark{
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 83%;
+  margin-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mark.active{
+  border-bottom: solid #46d0b3 1px;
+  box-shadow: 0px 2px 1px #46d0b3;
+  transition: ease-in-out 0.2s;
+}
+
+.none{
+  text-decoration: none;
+  color: unset;
+}
+
+.team{
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 75vw;
+  height: 50vh;
+  border: solid 0px #fff;
+}
+
+.teammate-center, .teammate-second, .teammate-third{
+  margin: 2%; 
+  width: 100%;
+}
+.teammate-second{
+  transform: scale(1);
+}
+.teammate-third{
+  transform: scale(0.9);
+}
+.teammate-center{
+  transform: scale(1.1);
+}
+
+
+.teammate-center:hover, .teammate-second:hover, .teammate-third:hover{
+  background-image:linear-gradient(0deg, rgba(70,208,179,0) 0%, rgba(70,208,179,1) 600%), url('./assets/image.svg');
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-top: #46d0b3 solid 3px;
+}
+
+
+.teammate{
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 10%, rgba(0, 0, 0, 0) 98%) 1;
+  
+}
+
+.body-sml{
+  color:hsl(201, 29%, 71%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+}
+
+.btn-rojo{
+  background-color: #ef2f56;
+  color:#fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 5px;
+  font-size: 2.5em;
+  width: 25%;
+  height: 80%;
+  border:none;
+  outline: 1px solid rgba(206, 203, 203, 0.5);
+  outline-offset: 3px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.btn-rojo:hover{
+  color: #4e6272;
+  background-color: #fff;
+}
+
+.btn-gris{
+  background-color: #4e6272;
+  color: #bccdd6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 25%;
+  height: 60%;
+  margin-right: 0px;
+  margin-left: 0px;
+  border-image: linear-gradient(rgba(255, 255, 255, 0.9) 100%, rgba(0, 0, 0, 0) 100%);
+  border-width: 2px;
+  outline: 1px solid rgba(255, 255, 255, 0.4);
+  outline-offset: -3.5px;
+}
+.btn-gris:hover{
+  border-image: linear-gradient(rgba(255, 255, 255, 0.9) 100%, rgba(0, 0, 0, 0) 1 );
+  border-width: 3px;
+  outline-offset: 2px;
+  outline: wheat 2px solid;
+  transition: 0.1s ease-in-out;
+
+}
+
+
+
+.buttons{
+  display: block;
+  width: 60%;
+  height: 8%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:0%;
+  padding-right: 0%;
+}
+
+.reticula{
+  filter: invert(100%);
+  position: absolute;
+  margin-left: 10px;
+}

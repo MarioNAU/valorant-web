@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <defs>
+        <pattern id="bg_pattern" width="45" height="45" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="45" y2="45" stroke="#46d0b3" stroke-width="1" stroke-linecap="round" stroke-opacity="40%"/>
+            <line x1="0" y1="45" x2="45" y2="0" stroke="#46d0b3" stroke-width="1" stroke-linecap="round" stroke-opacity="40%"/>
+        </pattern>
+        
+        <!-- Definir un gradiente de opacidad que desvanece hacia la parte inferior -->
+        <linearGradient id="opacityGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0" stop-color="#46d0b3" stop-opacity="1" />
+            <stop offset="1" stop-color="#46d0b3" stop-opacity="0" />
+        </linearGradient>
+
+        <!-- Máscara que utiliza el gradiente de opacidad -->
+        <mask id="gradientMask">
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#opacityGradient)"/>
+        </mask>
+    </defs>
+
+    <!-- Aplicar la máscara al rectángulo con el patrón -->
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#bg_pattern)" mask="url(#gradientMask)"/>
+</svg>
