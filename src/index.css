@@ -370,3 +370,32 @@ body{
   position: absolute;
   margin-left: 10px;
 }
+
+.roster{
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 60%;
+}
+
+.agentIcon {
+  width: 100%;
+}
+
+.agentIcon-container{
+  border: #46d0b3 2px solid;
+  margin: 5px;
+}
+
+.pagination-container{
+  color: #fff;
+  position: absolute;
+  display: flex;
+  width: 10%;
+}
+
+.pagination{
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 35%;
+  height: 35%;
+}
