@@ -1,0 +1,113 @@
+
+.team{
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 75vw;
+    height: 50vh;
+    border: solid 0px #fff;
+  }
+  
+  .teammate-center, .teammate-second, .teammate-third{
+    margin: 2%; 
+    width: 100%;
+  }
+  .teammate-second{
+    transform: scale(1);
+  }
+  .teammate-third{
+    transform: scale(0.9);
+  }
+  .teammate-center{
+    transform: scale(1.1);
+  }
+  
+  
+  .teammate-center:hover, .teammate-second:hover, .teammate-third:hover{
+    background-image:linear-gradient(0deg, rgba(70,208,179,0) 0%, rgba(70,208,179,1) 600%), url('../assets/image.svg');
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-top: #46d0b3 solid 3px;
+  }
+  
+  
+  .teammate{
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 10%, rgba(0, 0, 0, 0) 98%) 1;
+    
+  }
+  
+  .body-sml{
+    color:hsl(201, 29%, 71%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+  }
+  
+  .btn-rojo{
+    background-color: #ef2f56;
+    color:#fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    width: 25%;
+    height: 80%;
+    border:none;
+    outline: 1px solid rgba(206, 203, 203, 0.5);
+    outline-offset: 3px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .btn-rojo:hover{
+    color: #4e6272;
+    background-color: #fff;
+  }
+  
+  .btn-gris{
+    background-color: #4e6272;
+    color: #bccdd6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 25%;
+    height: 60%;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-image: linear-gradient(rgba(255, 255, 255, 0.9) 100%, rgba(0, 0, 0, 0) 100%);
+    border-width: 2px;
+    outline: 1px solid rgba(255, 255, 255, 0.4);
+    outline-offset: -3.5px;
+  }
+  .btn-gris:hover{
+    border-image: linear-gradient(rgba(255, 255, 255, 0.9) 100%, rgba(0, 0, 0, 0) 1 );
+    border-width: 3px;
+    outline-offset: 2px;
+    outline: wheat 2px solid;
+    transition: 0.1s ease-in-out;
+  
+  }
+  
+  
+  
+  .buttons{
+    display: block;
+    width: 60%;
+    height: 8%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:0%;
+    padding-right: 0%;
+  }
+  
+  .reticula{
+    filter: invert(100%);
+    position: absolute;
+    margin-left: 10px;
+  }
+  

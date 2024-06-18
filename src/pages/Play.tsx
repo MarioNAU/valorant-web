@@ -1,17 +1,18 @@
 import reticula from "../assets/objetivo.png";
 import Tabs from '../componentes/Tabs';
 import MenuBar from '../componentes/MenuBar';
+import '../styles/play.css'
 
 function Play () {
     return (
         <div className="play-main">
             <MenuBar/>
 
-            <div className='modes-container'>
+            <div className='child modes-container'>
                 <Tabs titles={['NORMAL', 'COMPETITIVO', 'SWIFTPLAY', 'SPIKERUSH', 'DEATHMATCH', 'CARRERA DE ARMAS', 'TEAM DEATHMATCH']}/>
             </div>
 
-            <div className="team">
+            <div className="child team">
                 <div className="teammate-third">
                     <div className="teammate">
 
@@ -36,9 +37,9 @@ function Play () {
                 </div>
             </div>
 
-            <span className='body-sml'>Normal: Jugabilidad estandár de VALORANT. Alterna entre atacar y defender sitios. El primero en ganar 13 rondas se llevará la victoria.</span>
+            <span className='child  body-sml'>Normal: Jugabilidad estandár de VALORANT. Alterna entre atacar y defender sitios. El primero en ganar 13 rondas se llevará la victoria.</span>
 
-            <div className='buttons'>
+            <div className='buttons child '>
                 <button className='btn-gris'>PRÁCTICA <img className='reticula' src={reticula}/></button>
                 <button className='btn-rojo'>INICIAR</button>
                 <button className='btn-gris'>ABANDONAR GRUPO</button>

@@ -1,0 +1,304 @@
+.changetier-container{
+    display: flex;
+    position: relative;
+    right: 45%;
+    left: 45%;
+    align-items: center; justify-content: center;
+    width: 10%;
+    height: 12%;
+    justify-content: space-between;
+    top: 2%;
+    
+  }
+  
+  .change-tier{
+    background-color: transparent;
+    color: #fff;
+    width: 15%;
+    height: 100%;
+    align-content: center;
+    font-size: 22px;
+    border: none;
+  
+  }
+  .pagination:hover{
+    background-color: #4e6272;
+  }
+  
+
+  .iconTier{
+    width: 50%;
+  }
+
+   
+  .agent-name2{
+    color: #F5F7C6;
+    font-size: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5%;
+    text-transform: uppercase;
+  }
+
+  .xp-container{
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    left: 37.5%;
+    right: 37.5%;
+  }
+
+  .xp{
+    margin-top: 2%;
+    width: 100%;
+    height: 10%;
+    border: transparent solid 1px;
+    border-radius: 0.5vh;
+    background-color: rgba(185,255,256, 0.3);
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .xp-porcentaje{
+    width: 60%;
+    height: 65%;
+    margin-left: 1%;
+    background-color: #46edc9;
+    border-radius: 0.5vh;
+  }
+
+  .contenedor-2clm{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .clm{
+    margin-top: 1%;
+    width: auto;
+    color:#fff;
+    padding-right: 1%;
+    padding-left: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-small;
+    font-weight: bold;
+  }
+
+  .progreso{
+    color:#46edc9;
+    font-weight: bold;
+  }
+  .progresof{
+    color:rgba(220, 75, 90, 1);
+    font-weight: bold;
+  }
+
+.historial{
+  position: relative;
+  display: block;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  margin-right: 100%;
+  width: 18%;
+  height: 8%;
+  background-color: rgba(255,255,256, 0.2);
+}
+
+.dropbtn {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+.dropdown-modes{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  z-index: 1;
+}
+
+.dropdown-modes a {
+  color: black;
+  padding: 8px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-modes a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-modes {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgba(255,255,256, 0.2);
+}
+
+
+.partidas{
+  width: 100%;
+  height: 95%;
+  margin-top: 1%;
+  overflow-y: scroll;
+}
+
+.partida-ganada{
+  position: relative;
+  display: flex;
+  margin-bottom: 3px;
+  width: 98%;
+  height: 20%;
+  background-color: rgba(70, 237, 201, 0.2);  
+}
+
+.partida-perdida{
+  position: relative;
+  display: flex;
+  margin-bottom: 3px;
+  width: 98%;
+  height: 20%;
+  background-color: rgba(250, 20, 40, 0.2);
+}
+
+
+.personaje{
+  width: 10%;
+  height: 100%;
+  border-left:solid 10px #46edc9;
+}
+
+.personaje-f{
+  width: 10%;
+  height: 100%;
+  border-left:solid 10px rgba(220, 75, 90, 0.5);
+}
+
+.DisplayIcon{
+  width: 98%;
+}
+
+.tier{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 100%;
+  align-items: center;
+}
+
+.division{
+  width: 60%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.scores{
+  width: 20%;
+  height: fit-content;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 1%;
+}
+
+.kda{
+  width: 100%;
+  color: #fff;
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: large;
+  margin-bottom: 4%;
+  
+}
+
+.score{
+  width: 100%;
+  color: #fff;
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: small;
+  text-align: left;
+}
+
+.points{
+  color: rgb(215, 213, 213);
+}
+
+.points-num{
+  width: 50px;
+  font-weight: bold;
+}
+
+.resultado{
+  width: 20%;
+  display: block;
+  height: 80%;
+  margin-top: 1%;
+}
+
+.victoria{
+  color: #46edc9;
+  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.derrota{
+  color: rgba(220, 75, 90, 1);
+  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.marcador{
+  color:white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.mapa{
+  width: 33%;
+  overflow: hidden;
+}
+
+.carrera-thumb{
+  background-color: #46edc9;
+  width: 100%;
+  mask-image: linear-gradient(-90deg, rgba(70, 237, 201, 1) 50%, transparent );
+}
+
+.open{
+  width: 5%;
+  height: 100%;
+  background-color: rgba(13, 25, 63, 0.742);
+  color: rgba(215, 213, 213, 1);
+  font-size: x-large;
+}

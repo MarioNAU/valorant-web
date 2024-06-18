@@ -1,0 +1,246 @@
+
+.agents-main{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right ,#C7f458ff 20%, #D56324FF);
+    z-index: 0;
+    filter: brightness(90%);
+  }
+  
+  .agents-main::after {
+    content: "";
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #3a7233ff, #3a2656ff);
+    -webkit-mask: linear-gradient(to bottom,#0000, #000);
+            mask: linear-gradient(to bottom,#0000, #000);
+    filter: brightness(90%);
+  }
+  
+  .fullSplash{
+    display: grid;
+    grid-template-columns: 50% 25%;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    z-index: 1 ;
+    left:12%;
+    right: 12%;
+  }
+  
+  .nameStyle{
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    object-fit: cover;
+    filter: opacity(15%);
+    background-position: 22%;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+  }
+  
+  .fullicon{
+    top: 0;
+    width: 100%;
+  }
+
+  .title-item-container{
+    color:white;
+    width: 100%;
+    height: 57%;
+  }
+  
+  
+
+
+  
+  .roster-container{
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: 0;
+    width: 94%;
+    height: 20%;
+    border-top: solid 1px wheat;
+    z-index: 1;
+  }
+  
+  .roster{
+    display: inline-flex;
+    width: 60%;
+    margin-top: 1%;
+  }
+  .agentIcon {
+    width: 100%;
+  }
+  .agentIcon-container{
+    border: #46d0b3 2px solid;
+    width: 100%;
+  }
+
+  .pagination-container{
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    display: flex;
+    width: 10%;
+    height: 5%;
+    bottom: 0;
+    left: 45%;
+    right: 45%;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .pagination{
+    position: relative;
+    display: block;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 30%;
+    height: 100%;
+    align-content: center;
+    font-size: 22px;
+    border: none;
+  
+  }
+  .pagination:hover{
+    background-color: #4e6272;
+  }
+  
+  .numeros{
+    width: 40%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container-tabs{
+    position: absolute;
+    right: 3%;
+    border-left: solid 1px white;
+    height:60%;
+    width: 25%;
+    z-index: 2;
+    top: 10%;
+  }
+  
+  .bloc-tabs{
+    display: inline-flex;
+    padding-left: 2%;
+    height: 15%;
+    width: 100%;
+  }
+  
+  .tab{
+    display: table-column;
+    margin-right: 2px;
+    padding: 0;
+    width:19%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .tab:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    padding-top: 0;
+  }
+  
+  
+  .habilidades{
+    display: block;
+    width: 100%;
+    height: 95%;
+  }
+  .active-habilidades{
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .habilidad{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 80%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .active-habilidad{
+    background-color: rgba(240, 250, 255, 0.5);
+  }
+  
+  .habilitieIcon{
+    margin-top: 10%;
+    width: 50%;
+    filter: contrast(85%);
+  }
+  
+   
+  .rol{
+    position: inherit;
+    color: white;
+    left: 0;
+    letter-spacing: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-left: 2%;
+    text-transform: uppercase;
+  }
+  
+  .agent-name{
+    color: #F5F7C6;
+    font-size: 6rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    width: fit-content;
+    margin-left: 2%;
+    margin-top: 3%;
+    text-transform: uppercase;
+  }
+  
+  .agent-background{
+    color: #EAEEB2;
+    width: 92%;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    
+    margin-bottom: 5%;
+  }
+  
+  .content{
+    display: none;
+    margin-top: 5%;
+  }
+  
+  .active-content{
+    display: block;
+  }
+  
+  .rol-content{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2%;
+    margin-left: 0%;
+    width: fit-content;
+  }
+  
+  .description-habilidad{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    width: 90%;
+  }
+  

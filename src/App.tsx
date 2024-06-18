@@ -3,7 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "../src/pages/Home";
 import Play from "./pages/Play";
 import Agents from "./pages/Agents";
+import Battlepass from "./pages/Battlepass";
+import Carrera from './pages/Carrera';
 import { AgentsProvider } from "./context/Datacontext";
+
 
 function App() {
  return (
@@ -12,8 +15,9 @@ function App() {
     <Routes>
       <Route path='/' element={<Homepage/>} />
       <Route path='/Play' element={<Play/>} />
-      
+      <Route path='Battlepass' element={<Battlepass/>}/> 
       <Route path='/Agents' element={<Agents/>}/>
+      <Route path='/Carrera' element={<Carrera/>}/>
       
     </Routes>
     </AgentsProvider>

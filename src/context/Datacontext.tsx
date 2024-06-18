@@ -1,9 +1,14 @@
 import {ReactNode, createContext, useContext, useState} from 'react'
-import { getAgentsRequest } from "../api/actions";
+import { getAgentsRequest, getMapsRequest, getTiersRequest } from "../api/actions";
+import {agentsInterface, DataItem, CarreraInterfaces, MapsObject } from '../types/interfaces'
 
 interface DataContextType {
-    agents: any[];
+    agents: agentsInterface[];
+    maps: MapsObject[];
+    tieres: DataItem[];
     getAgentsData: () => Promise<void>;
+    getMapsData: () => Promise<void>;
+    getTieresData: () => Promise<void>;
 }
 
 const Datacontext = createContext<DataContextType | undefined>(undefined);
@@ -23,20 +28,42 @@ export const useAgents = () => {
 
 export function AgentsProvider({children}: Props) {
     const [agents, setAgents] = useState<any>([]);
+    const [maps, setMaps] = useState<any>([]);
+    const [tieres, setTieres] = useState<DataItem[]>([]);
+
+    const getMapsData = async () => {
+        try {
+            const res = await getMapsRequest();
+            const mapsData = res.data
+            setMaps(mapsData.data);
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     const getAgentsData = async () => {
         try {
             const res = await getAgentsRequest();
             const agentsData = res.data;
-            console.log(agentsData.data)
             setAgents(agentsData.data);
         } catch (error) {
             console.log(error);
         }
     }
+
+    const getTieresData = async () => {
+        try {
+            const res = await getTiersRequest();
+            const tiersData = res.data.data;
+            
+            setTieres(tiersData);
+        } catch (error) {
+            console.log(error)
+        }
+    }
     
    return(
-        <Datacontext.Provider value={{agents, getAgentsData}}>
+        <Datacontext.Provider value={{agents, maps, tieres, getAgentsData, getMapsData, getTieresData}}>
             {children}
         </Datacontext.Provider>
    );
