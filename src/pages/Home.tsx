@@ -7,10 +7,10 @@ function Homepage () {
       <div className="menu">
         <ul className='rombo'>
           <li className='option'><a className='none' href='/play'>Play</a></li>
-          <li className='option'>Career</li>
+          <li className='option'><a className='none' href='/carrera'>Career</a></li>
           <li className='option'><a className='none' href='/battlepass'>Battlepass</a></li>
-          <li className='option'>Collection</li>
-          <li className='option'>Agents</li>
+          <li className='option'><a className='none' href='/coleccion'>Collection</a></li>
+          <li className='option'><a className='none' href='/agents'>Agents</a></li>
           <li className='option'>Store</li>
         </ul>
       </div>

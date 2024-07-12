@@ -3,7 +3,8 @@
     position: relative;
     right: 45%;
     left: 45%;
-    align-items: center; justify-content: center;
+    align-items: center; 
+    justify-content: center;
     width: 10%;
     height: 12%;
     justify-content: space-between;

@@ -4,6 +4,7 @@ import Homepage from "../src/pages/Home";
 import Play from "./pages/Play";
 import Agents from "./pages/Agents";
 import Battlepass from "./pages/Battlepass";
+import Coleccion from './pages/Coleccion';
 import Carrera from './pages/Carrera';
 import { AgentsProvider } from "./context/Datacontext";
 
@@ -18,7 +19,7 @@ function App() {
       <Route path='Battlepass' element={<Battlepass/>}/> 
       <Route path='/Agents' element={<Agents/>}/>
       <Route path='/Carrera' element={<Carrera/>}/>
-      
+      <Route path='/Coleccion' element={<Coleccion/>}/>
     </Routes>
     </AgentsProvider>
   </BrowserRouter>
